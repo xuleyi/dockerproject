@@ -1,7 +1,7 @@
 from socket import *
 import time
 
-host  = ''
+host  = '192.168.1.3'
 port = 13141
 bufsize = 1024
 
@@ -10,7 +10,7 @@ udpClient = socket(AF_INET,SOCK_DGRAM)
 
 i = 0
 while i<100:
-    data = "ping"
+    data = str(i)
     data = data.encode(encoding="utf-8") 
     udpClient.sendto(data,addr)
     print(data.decode(encoding="utf-8"))
