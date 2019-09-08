@@ -1,5 +1,5 @@
-docker run -d --name rptest myal:t7
-sleep 6
+docker run -d --name rptest myal:testdow
+sleep 5
 
 t1=$(date +%s.%N)
 echo $t1
@@ -13,8 +13,8 @@ sshpass -p "123456" ssh ann@192.168.1.2 "cd ~/project; bash rprun2.sh"
 
 echo "nuc" |sudo -S rm -rf /tmp/checkpoint2/
 
-t2=$(date +%s.%N)
-echo "t2: $t2"
-echo "$t2 - $t1" | bc
+#t2=$(date +%s.%N)
+#echo "t2: $t2"
+#echo "$t2 - $t1" | bc
 
 
