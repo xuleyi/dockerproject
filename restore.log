@@ -1,0 +1,244 @@
+(00.000054) mnt: Added /sys/fs/cgroup/systemd:/sys/fs/cgroup/systemd/system.slice/docker.service ext mount mapping
+(00.000074) mnt: Added /sys/fs/cgroup/cpu,cpuacct:/sys/fs/cgroup/cpu,cpuacct/system.slice/docker.service ext mount mapping
+(00.000077) mnt: Added /sys/fs/cgroup/perf_event:/sys/fs/cgroup/perf_event ext mount mapping
+(00.000079) mnt: Added /sys/fs/cgroup/devices:/sys/fs/cgroup/devices/system.slice/docker.service ext mount mapping
+(00.000081) mnt: Added /sys/fs/cgroup/rdma:/sys/fs/cgroup/rdma ext mount mapping
+(00.000083) mnt: Added /sys/fs/cgroup/memory:/sys/fs/cgroup/memory/system.slice/docker.service ext mount mapping
+(00.000085) mnt: Added /sys/fs/cgroup/net_cls,net_prio:/sys/fs/cgroup/net_cls,net_prio ext mount mapping
+(00.000087) mnt: Added /sys/fs/cgroup/freezer:/sys/fs/cgroup/freezer ext mount mapping
+(00.000088) mnt: Added /sys/fs/cgroup/blkio:/sys/fs/cgroup/blkio/system.slice/docker.service ext mount mapping
+(00.000090) mnt: Added /sys/fs/cgroup/pids:/sys/fs/cgroup/pids/system.slice/docker.service ext mount mapping
+(00.000092) mnt: Added /sys/fs/cgroup/cpuset:/sys/fs/cgroup/cpuset ext mount mapping
+(00.000094) mnt: Added /sys/fs/cgroup/hugetlb:/sys/fs/cgroup/hugetlb ext mount mapping
+(00.000096) mnt: Added /etc/resolv.conf:/var/lib/docker/containers/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013/resolv.conf ext mount mapping
+(00.000098) mnt: Added /etc/hostname:/var/lib/docker/containers/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013/hostname ext mount mapping
+(00.000100) mnt: Added /etc/hosts:/var/lib/docker/containers/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013/hosts ext mount mapping
+(00.000102) mnt: Added /dev/shm:/var/lib/docker/containers/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013/shm ext mount mapping
+(00.000167) Pagemap is fully functional
+(00.000185) Found task size of 7ffffffff000
+(00.007776) Found fd 1 (id pipe:[77994]) in inherit fd list (caller inherit_fd_resolve_clash)
+(00.007829) Inherit fd 1 moved to 0 to resolve clash
+(00.007855) Found fd 2 (id pipe:[77995]) in inherit fd list (caller inherit_fd_resolve_clash)
+(00.007870) Inherit fd 2 moved to 6 to resolve clash
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy DROP)
+target     prot opt source               destination         
+DOCKER-ISOLATION  all  --  anywhere             anywhere            
+DOCKER     all  --  anywhere             anywhere            
+ACCEPT     all  --  anywhere             anywhere             ctstate RELATED,ESTABLISHED
+ACCEPT     all  --  anywhere             anywhere            
+ACCEPT     all  --  anywhere             anywhere            
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain DOCKER (1 references)
+target     prot opt source               destination         
+
+Chain DOCKER-ISOLATION (1 references)
+target     prot opt source               destination         
+RETURN     all  --  anywhere             anywhere            
+(00.013304) cpu: fpu:1 fxsr:1 xsave:1
+(00.013441) vdso: Parsing at 7ffd367a1000 7ffd367a3000
+(00.013447) vdso: PT_LOAD p_vaddr: 0
+(00.013451) vdso: DT_HASH: 120
+(00.013453) vdso: DT_STRTAB: 2b0
+(00.013456) vdso: DT_SYMTAB: 1a8
+(00.013458) vdso: DT_STRSZ: 5e
+(00.013461) vdso: DT_SYMENT: 18
+(00.013463) vdso: nbucket 3 nchain b bucket 7ffd367a1128 chain 7ffd367a1134
+(00.013469) vdso: rt [vdso] 7ffd367a1000-7ffd367a3000 [vvar] 7ffd3679e000-7ffd367a1000
+(00.013521) kernel pid_max=32768
+(00.013525) Reading image tree
+(00.013565) Add mnt ns 12 pid 1
+(00.013580) pstree pid_max=17
+(00.013588) Will restore in 6c020000 namespaces
+(00.013591) NS mask to use 6c020000
+(00.013595) Collecting 39/18 (flags 1)
+(00.013606) No reg-files.img image
+(00.013612)  `- ... done
+(00.013615) Collecting 53/58 (flags 0)
+(00.013621) No remap-fpath.img image
+(00.013624)  `- ... done
+(00.013627) Collecting 42/21 (flags 0)
+(00.013632) No inetsk.img image
+(00.013635)  `- ... done
+(00.013739) cg: rewriting docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505 to /docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.013756) cg: rewriting docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505 to /docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.013761) cg: rewriting docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505 to /docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.013764) cg: rewriting docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505 to /docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.013767) cg: rewriting docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505 to /docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.013772) cg: rewriting docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505 to /docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.013775) cg: rewriting docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505 to /docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.013778) cg: rewriting docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505 to /docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.013781) cg: rewriting docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505 to /docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.013787) cg: Preparing cgroups yard (cgroups restore mode 0x4)
+(00.013871) cg: Opening .criu.cgyard.5IQCf4 as cg yard
+(00.013885) cg: 	Making controller dir .criu.cgyard.5IQCf4/perf_event (perf_event)
+(00.014057) cg: Determined cgroup dir perf_event//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013 already exist
+(00.014066) cg: Skip restoring properties on cgroup dir perf_event//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.014085) cg: 	Making controller dir .criu.cgyard.5IQCf4/hugetlb (hugetlb)
+(00.014255) cg: Determined cgroup dir hugetlb//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013 already exist
+(00.014261) cg: Skip restoring properties on cgroup dir hugetlb//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.014276) cg: 	Making controller dir .criu.cgyard.5IQCf4/net_cls,net_prio (net_cls,net_prio)
+(00.014579) cg: Created cgroup dir net_cls,net_prio/docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505
+(00.014642) cg: 	Making controller dir .criu.cgyard.5IQCf4/freezer (freezer)
+(00.015577) cg: Determined cgroup dir freezer//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013 already exist
+(00.015587) cg: Skip restoring properties on cgroup dir freezer//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.015603) cg: 	Making controller dir .criu.cgyard.5IQCf4/blkio (blkio)
+(00.015851) cg: Determined cgroup dir blkio//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013 already exist
+(00.015857) cg: Skip restoring properties on cgroup dir blkio//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.015870) cg: 	Making controller dir .criu.cgyard.5IQCf4/cpuset (cpuset)
+(00.017792) cg: Determined cgroup dir cpuset//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013 already exist
+(00.017801) cg: Skip restoring properties on cgroup dir cpuset//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.017820) cg: 	Making controller dir .criu.cgyard.5IQCf4/cpu,cpuacct (cpu,cpuacct)
+(00.018119) cg: Created cgroup dir cpu,cpuacct/docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505
+(00.018147) cg: 	Making controller dir .criu.cgyard.5IQCf4/pids (pids)
+(00.018927) cg: Determined cgroup dir pids//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013 already exist
+(00.018934) cg: Skip restoring properties on cgroup dir pids//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.018958) cg: 	Making controller dir .criu.cgyard.5IQCf4/memory (memory)
+(00.019366) cg: Determined cgroup dir memory//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013 already exist
+(00.019374) cg: Skip restoring properties on cgroup dir memory//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.019388) cg: 	Making controller dir .criu.cgyard.5IQCf4/devices (devices)
+(00.019565) cg: Determined cgroup dir devices//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013 already exist
+(00.019571) cg: Skip restoring properties on cgroup dir devices//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.019590) cg: 	Making controller dir .criu.cgyard.5IQCf4/systemd (none,name=systemd)
+(00.019743) cg: Determined cgroup dir systemd//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013 already exist
+(00.019748) cg: Skip restoring properties on cgroup dir systemd//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013
+(00.019765) No apparmor.img image
+(00.019777) Running pre-restore scripts
+(00.019780) 	RPC
+(00.023138) Saved netns fd for links restore
+(00.023162) mnt: Reading mountpoint images (id 12 pid 1)
+(00.023173) mnt: 		Will mount 173 from /
+(00.023179) mnt: 		Will mount 173 @ ./sys/firmware
+(00.023182) mnt: 	Read 173 mp @ ./sys/firmware
+(00.023187) mnt: 		Will mount 172 from /null
+(00.023190) mnt: 		Will mount 172 @ ./proc/sched_debug
+(00.023193) mnt: 	Read 172 mp @ ./proc/sched_debug
+(00.023197) mnt: 		Will mount 171 from /null
+(00.023200) mnt: 		Will mount 171 @ ./proc/timer_stats
+(00.023202) mnt: 	Read 171 mp @ ./proc/timer_stats
+(00.023206) mnt: 		Will mount 170 from /null
+(00.023209) mnt: 		Will mount 170 @ ./proc/timer_list
+(00.023212) mnt: 	Read 170 mp @ ./proc/timer_list
+(00.023216) mnt: 		Will mount 169 from /null
+(00.023219) mnt: 		Will mount 169 @ ./proc/kcore
+(00.023221) mnt: 	Read 169 mp @ ./proc/kcore
+(00.023226) mnt: 		Will mount 168 from /sysrq-trigger
+(00.023229) mnt: 		Will mount 168 @ ./proc/sysrq-trigger
+(00.023231) mnt: 	Read 168 mp @ ./proc/sysrq-trigger
+(00.023236) mnt: 		Will mount 167 from /sys
+(00.023238) mnt: 		Will mount 167 @ ./proc/sys
+(00.023241) mnt: 	Read 167 mp @ ./proc/sys
+(00.023245) mnt: 		Will mount 166 from /irq
+(00.023248) mnt: 		Will mount 166 @ ./proc/irq
+(00.023251) mnt: 	Read 166 mp @ ./proc/irq
+(00.023260) mnt: 		Will mount 165 from /fs
+(00.023264) mnt: 		Will mount 165 @ ./proc/fs
+(00.023267) mnt: 	Read 165 mp @ ./proc/fs
+(00.023271) mnt: 		Will mount 164 from /bus
+(00.023275) mnt: 		Will mount 164 @ ./proc/bus
+(00.023278) mnt: 	Read 164 mp @ ./proc/bus
+(00.023282) mnt: 		Will mount 162 from /asound
+(00.023285) mnt: 		Will mount 162 @ ./proc/asound
+(00.023288) mnt: 	Read 162 mp @ ./proc/asound
+(00.023293) mnt: 		Will mount 302 from /
+(00.023297) mnt: 		Will mount 302 @ ./dev/shm
+(00.023300) mnt: 	Read 302 mp @ ./dev/shm
+(00.023305) mnt: 		Will mount 301 from /var/lib/docker/containers/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505/hosts
+(00.023308) mnt: 		Will mount 301 @ ./etc/hosts
+(00.023311) mnt: 	Read 301 mp @ ./etc/hosts
+(00.023318) mnt: 		Will mount 300 from /var/lib/docker/containers/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505/hostname
+(00.023322) mnt: 		Will mount 300 @ ./etc/hostname
+(00.023325) mnt: 	Read 300 mp @ ./etc/hostname
+(00.023330) mnt: 		Will mount 299 from /var/lib/docker/containers/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505/resolv.conf
+(00.023332) mnt: 		Will mount 299 @ ./etc/resolv.conf
+(00.023335) mnt: 	Read 299 mp @ ./etc/resolv.conf
+(00.023339) mnt: 		Will mount 298 from /
+(00.023342) mnt: 		Will mount 298 @ ./dev/mqueue
+(00.023344) mnt: 	Read 298 mp @ ./dev/mqueue
+(00.023348) mnt: 		Will mount 297 from /docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505
+(00.023351) mnt: 		Will mount 297 @ ./sys/fs/cgroup/perf_event
+(00.023354) mnt: 	Read 297 mp @ ./sys/fs/cgroup/perf_event
+(00.023358) mnt: 		Will mount 296 from /docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505
+(00.023369) mnt: 		Will mount 296 @ ./sys/fs/cgroup/hugetlb
+(00.023371) mnt: 	Read 296 mp @ ./sys/fs/cgroup/hugetlb
+(00.023378) mnt: 		Will mount 295 from /docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505
+(00.023381) mnt: 		Will mount 295 @ ./sys/fs/cgroup/net_cls,net_prio
+(00.023383) mnt: 	Read 295 mp @ ./sys/fs/cgroup/net_cls,net_prio
+(00.023388) mnt: 		Will mount 294 from /docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505
+(00.023391) mnt: 		Will mount 294 @ ./sys/fs/cgroup/freezer
+(00.023394) mnt: 	Read 294 mp @ ./sys/fs/cgroup/freezer
+(00.023398) mnt: 		Will mount 293 from /docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505
+(00.023401) mnt: 		Will mount 293 @ ./sys/fs/cgroup/blkio
+(00.023404) mnt: 	Read 293 mp @ ./sys/fs/cgroup/blkio
+(00.023408) mnt: 		Will mount 292 from /docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505
+(00.023411) mnt: 		Will mount 292 @ ./sys/fs/cgroup/cpuset
+(00.023414) mnt: 	Read 292 mp @ ./sys/fs/cgroup/cpuset
+(00.023419) mnt: 		Will mount 291 from /docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505
+(00.023422) mnt: 		Will mount 291 @ ./sys/fs/cgroup/cpu,cpuacct
+(00.023425) mnt: 	Read 291 mp @ ./sys/fs/cgroup/cpu,cpuacct
+(00.023431) mnt: 		Will mount 290 from /docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505
+(00.023435) mnt: 		Will mount 290 @ ./sys/fs/cgroup/pids
+(00.023438) mnt: 	Read 290 mp @ ./sys/fs/cgroup/pids
+(00.023442) mnt: 		Will mount 289 from /docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505
+(00.023445) mnt: 		Will mount 289 @ ./sys/fs/cgroup/memory
+(00.023448) mnt: 	Read 289 mp @ ./sys/fs/cgroup/memory
+(00.023452) mnt: 		Will mount 288 from /docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505
+(00.023455) mnt: 		Will mount 288 @ ./sys/fs/cgroup/devices
+(00.023458) mnt: 	Read 288 mp @ ./sys/fs/cgroup/devices
+(00.023462) mnt: 		Will mount 287 from /docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505
+(00.023465) mnt: 		Will mount 287 @ ./sys/fs/cgroup/systemd
+(00.023468) mnt: 	Read 287 mp @ ./sys/fs/cgroup/systemd
+(00.023472) mnt: 		Will mount 286 from /
+(00.023477) mnt: 		Will mount 286 @ ./sys/fs/cgroup
+(00.023480) mnt: 	Read 286 mp @ ./sys/fs/cgroup
+(00.023484) mnt: 		Will mount 285 from /
+(00.023487) mnt: 		Will mount 285 @ ./sys
+(00.023490) mnt: 	Read 285 mp @ ./sys
+(00.023494) mnt: 		Will mount 284 from /
+(00.023497) mnt: 		Will mount 284 @ ./dev/pts
+(00.023500) mnt: 	Read 284 mp @ ./dev/pts
+(00.023504) mnt: 		Will mount 283 from /
+(00.023507) mnt: 		Will mount 283 @ ./dev
+(00.023510) mnt: 	Read 283 mp @ ./dev
+(00.023513) mnt: 		Will mount 282 from /
+(00.023516) mnt: 		Will mount 282 @ ./proc
+(00.023519) mnt: 	Read 282 mp @ ./proc
+(00.023523) mnt: 		Will mount 281 from /
+(00.023526) mnt: 		Will mount 281 @ ./
+(00.023529) mnt: 	Read 281 mp @ ./
+(00.023602) Warn  (criu/cr-restore.c:853): Set CLONE_PARENT | CLONE_NEWPID but it might cause restore problem,because not all kernels support such clone flags combinations!
+(00.023606) Forking task with 1 pid (flags 0x6c028000)
+(00.032249) PID: real 7489 virt 1
+(00.032330) Wait until namespaces are created
+(00.035093)      1: Found fd 0 (id pipe:[77993]) in inherit fd list (caller close_old_fds)
+(00.035108)      1: Found fd 1 (id pipe:[77994]) in inherit fd list (caller close_old_fds)
+(00.035112)      1: Found fd 2 (id pipe:[77995]) in inherit fd list (caller close_old_fds)
+(00.035234) Running setup-namespaces scripts
+(00.035240) 	RPC
+(00.098532)      1: cg: Move into 2
+(00.098555)      1: cg:   `-> blkio//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013/tasks
+(00.098592)      1: cg:   `-> cpu,cpuacct//docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505/tasks
+(00.098613)      1: cg:   `-> cpuset//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013/tasks
+(00.098626)      1: cg:   `-> devices//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013/tasks
+(00.098643)      1: cg:   `-> freezer//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013/tasks
+(00.098654)      1: cg:   `-> hugetlb//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013/tasks
+(00.098668)      1: cg:   `-> memory//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013/tasks
+(00.098704)      1: cg:   `-> systemd//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013/tasks
+(00.098720)      1: cg:   `-> net_cls,net_prio//docker/f459a01553113114b4912a5449bf1533a7fd856c761a1763a8d51dab704de505/tasks
+(00.100680)      1: cg:   `-> perf_event//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013/tasks
+(00.100699)      1: cg:   `-> pids//docker/d0c75459610fb52e667a633d32f6312ba5557046889b6f63b37392965a5d2013/tasks
+(00.100710)      1: Calling restore_sid() for init
+(00.100712)      1: Restoring 1 to 1 sid
+(00.100756)      1: Mount procfs in crtools-proc.XgAhWz
+(00.119063)      1: Restoring namespaces 1 flags 0x6c028000
+(00.119084)      1: No iptables-9.img image
+(00.119086)      1: Error (/build/criu-SFnLic/criu-2.6/criu/include/image.h:140): BUG at /build/criu-SFnLic/criu-2.6/criu/include/image.h:140
+(00.119193) Error (criu/cr-restore.c:1024): 7489 killed by signal 11: Segmentation fault
+(00.139262) Error (criu/cr-restore.c:1024): 7489 killed by signal 9: Killed
+(00.175457) mnt: Switching to new ns to clean ghosts
+(00.175637) Error (criu/cr-restore.c:1890): Restoring FAILED.

@@ -1,0 +1,13 @@
+docker run -d --name test myal:t5
+sleep 5
+docker checkpoint create --checkpoint-dir=/tmp test checkpoint1
+result1=$(docker inspect -f '{{.Id}}' test)
+echo $result1
+
+
+echo '123456' | scp -r /tmp/checkpoint1 ann@192.168.0.2:/tmp/
+echo "checkpoint copied 1"
+#sshpass -p "nuc" ssh nuc@192.168.209.186 "cd ~/project; bash run2.sh"
+
+#docker rm test
+

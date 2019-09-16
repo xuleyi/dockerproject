@@ -20,10 +20,12 @@ interval = 0
 while True:
     print('Waiting for connection...')
     data,addr = udpServer.recvfrom(bufsize)
+    if (i==0):
+        t0 = time.time()*1000
     if switch: 
         if (addr[0] == "192.168.1.1"):
             #record data rate of h1
-            t1 = time.time()
+            t1 = time.time()*1000-t0
             with open("./t1_rp.txt",'a+') as f_t1:
                 f_t1.write(str(t1))
                 f_t1.write('\n')
@@ -32,7 +34,7 @@ while True:
  #           print("val from h1",val_h1,"t1",t1)
         if (addr[0] == "192.168.1.2"):
             #record data rate of h2
-            t2 = time.time()
+            t2 = time.time()*1000-t0
             with open("./t2_rp.txt",'a+') as f_t2:
                 f_t2.write(str(t2))
                 f_t2.write('\n')
@@ -41,7 +43,7 @@ while True:
             if (int(data) == int(val_h1[len(val_h1)-1])):
                 switch = False
     elif (addr[0] == "192.168.1.2"): 
-        t2 = time.time()
+        t2 = time.time()*1000-t0
         with open("./t2_rp.txt",'a+') as f_t2:
             f_t2.write(str(t2))
             f_t2.write('\n')
@@ -55,7 +57,7 @@ while True:
         interval = lst[-1] - lst[-2]    
        # print('interval:',interval)
     i += 1
-    if (i == 100):
+    if (i == 100000000):
         break
 
 udpServer.close()
